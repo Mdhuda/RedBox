@@ -1,0 +1,25 @@
+
+public class TestRunner {
+
+	public static void main(String[] args) throws InterruptedException 
+	{
+		BaseTEST myTest = new BaseTEST();
+		
+		
+		
+		myTest.OpenAPP("Chrome", "http://www.calculator.net/");
+		
+		
+		myTest.ClickElement(".//*[@id='hl1']/li[3]/a");
+		myTest.EnterData(".//*[@id='cloanamount']", "20000");
+		myTest.EnterData(".//*[@id='cloanterm']", "72");
+		myTest.EnterData(".//*[@id='cinterestrate']", "4");
+		myTest.EnterData(".//*[@id='cdownpayment']", "4000");
+		myTest.EnterData(".//*[@id='ctradeinvalue']", "500");
+		myTest.EnterData(".//*[@id='csaletax']", "7");
+		myTest.EnterData(".//*[@id='ctitlereg']", "300");
+		myTest.ClickElement(".//*[@id='calinputtable']/tbody/tr[10]/td[1]/input[3]");
+
+	}
+
+}
